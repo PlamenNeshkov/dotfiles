@@ -50,7 +50,7 @@ sudo apt install -y -f
 rm google-chrome.deb
 
 # Useful software
-sudo apt install -y brackets vlc pidgin zip unzip rar unrar
+sudo apt install -y brackets vlc pidgin tree zip unzip rar unrar
 
 # Media codecs
 sudo apt install -y ubuntu-restricted-extras
