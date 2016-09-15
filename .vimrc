@@ -1,12 +1,6 @@
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
 " Plamen's .vimrc
 "
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" GENERAL
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Disable vi compatibility mode
 set nocompatible
@@ -28,10 +22,9 @@ let g:mapleader = ","
 " Fast saving
 nmap <leader>w :w!<cr>
 
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" USER INTERFACE
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Productivity
+nnoremap ; :
+vnoremap ; :
 
 " Show line numbers
 set number
@@ -79,21 +72,10 @@ set ttyfast
 " Magic setting ;)
 set magic
 
-" Show matching brackets
-set showmatch
-
-" How often to blink when showing matching brackets
-set mat=2
-
 " Annoying piece of crap sounds OFF
 set noerrorbells
 set novisualbell
 set t_vb=
-
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" COLORS AND FONTS
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Syntax highlighting
 syntax enable
@@ -104,23 +86,9 @@ set t_Co=256
 " Standard encoding
 set encoding=utf-8
 
-" Use unix as standard filetype
-set ffs=unix,dos,mac
-
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" BACKUP AND UNDO
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" Disable any file history
 set nobackup
 set nowb
 set noswapfile
-
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" TAB AND INDENT
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Replace tabs with spaces
 set expandtab
@@ -145,11 +113,6 @@ set si
 " Wrap lines
 set wrap
 
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" VUNDLE
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 " Required for vundle
 filetype off
 
@@ -159,10 +122,15 @@ set rtp+=~/.vim/bundle/Vundle.vim
 " Vundle plugins
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
-Plugin 'pangloss/vim-javascript'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-easytags'
+Plugin 'vim-scripts/cmdalias.vim'
 call vundle#end()
 
 " Enable vim-airline
@@ -173,3 +141,21 @@ let g:airline_powerline_fonts = 1
 
 " Restore
 filetype plugin indent on
+
+"""
+" Syntastic
+"""
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 1
+
+" Solarized
+set background=dark
+colorscheme solarized
+
+cnoreabbrev Ut UpdateTags

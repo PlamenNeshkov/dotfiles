@@ -1,16 +1,10 @@
 export ZSH=/home/plamen/.oh-my-zsh
 
-ZSH_THEME="agnoster"
+ZSH_THEME="bira"
 
-# Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
 plugins=(z sudo git debian thefuck npm jsontools web-search cabal)
 
-# User configuration
-
 export PATH=~/.cabal/bin/:$PATH
-# export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
-# export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -22,6 +16,8 @@ export SSH_KEY_PATH="~/.ssh/id_rsa.pub"
 # aliases
 alias c="cd ~/Code"
 alias rmd="vi ./README.md"
+alias jstree="tree -I 'node_modules|bower_components'"
+alias jst="jstree"
 alias zconf="vi ~/.zshrc"
 alias vconf="vi ~/.vimrc"
 alias ohmyzsh="vi ~/.oh-my-zsh"
