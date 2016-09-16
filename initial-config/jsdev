@@ -1,0 +1,9 @@
+wget -O nvm-install.sh https://raw.githubusercontent.com/creationix/nvm/v0.31.7/install.sh
+sh ./nvm-install.sh
+rm nvm-install.sh
+export NVM_DIR="/home/plamen/.nvm" 
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+nvm install node
+nvm use node
+
+nvm install -g bower gulp eslint-airbnb-config
