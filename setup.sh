@@ -3,7 +3,6 @@
 # Additional repos
 sudo add-apt-repository -y ppa:webupd8team/java
 sudo add-apt-repository -y ppa:moka/daily
-sudo add-apt-repository -y ppa:webupd8team/brackets
 
 # Update everything
 sudo apt update -y 
@@ -24,16 +23,6 @@ wget -O ~/.vimrc https://raw.githubusercontent.com/PlamenNeshkov/dotfiles/master
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 git config --global core.editor vim
-
-# Dev
-echo "oracle-java8-installer shared/accepted-oracle-license-v1-1 select true" | sudo debconf-set-selections
-sudo apt install -y oracle-java8-installer
-wget -O nvm-install.sh https://raw.githubusercontent.com/creationix/nvm/v0.31.7/install.sh
-sh ./nvm-install.sh
-rm nvm-install.sh
-export NVM_DIR="/home/plamen/.nvm" 
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-nvm install 4.5
 
 # Theming
 sudo apt install -y unity-tweak-tool
