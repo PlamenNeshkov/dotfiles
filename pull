@@ -1,0 +1,7 @@
+#!/bin/bash
+
+git pull origin master
+rm ~/.vimrc
+rm ~/.zshrc
+cp .vimrc ~
+cp .zshrc ~
