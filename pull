@@ -1,7 +1,7 @@
 #!/bin/bash
 
 git pull origin master
-rm ~/.vimrc
-rm ~/.zshrc
+rm ~/.vimrc ~/.zshrc ~/.eshintrc
 cp .vimrc ~
 cp .zshrc ~
+cp .eshintrc ~
