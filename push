@@ -1,9 +1,9 @@
 #!/bin/bash
 
-rm .vimrc
-rm .zshrc
+rm .vimrc .zshrc .eshintrc
 cp ~/.vimrc .
-cp ~/.zshrc .
+cp ~/.zshrc .    'no-floa
+cp ~/.eshintrc .
 
 git add -A
 read -p "Commit message: " msg
