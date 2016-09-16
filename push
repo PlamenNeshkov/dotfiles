@@ -3,7 +3,7 @@
 rm .vimrc .zshrc .eshintrc
 cp ~/.vimrc .
 cp ~/.zshrc .
-cp ~/.eshintrc .
+cp ~/.eslintrc .
 
 git add -A
 read -p "Commit message: " msg

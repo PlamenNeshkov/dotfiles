@@ -96,9 +96,9 @@ set expandtab
 " Much smart
 set smarttab
 
-" A tab is 4 spaces
-set shiftwidth=4
-set tabstop=4
+" A tab is 2 spaces
+set shiftwidth=2
+set tabstop=2
 
 " Linebreak at 500 chars
 set lbr
@@ -130,7 +130,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-easytags'
-Plugin 'vim-scripts/cmdalias.vim'
+Plugin 'pangloss/vim-javascript'
 call vundle#end()
 
 " Enable vim-airline
@@ -153,6 +153,8 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 1
+
+let g:syntastic_javascript_checkers = ['eslint']
 
 " Solarized
 set background=dark
