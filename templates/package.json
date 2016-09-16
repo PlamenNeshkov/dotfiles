@@ -10,6 +10,7 @@
   "license": "GPL-3.0",
   "devDependencies": {
     "gulp": "~3.9.1",
-    "gulp-eslint": "~3.0.1"
+    "gulp-eslint": "~3.0.1",
+    "wiredep": "~4.0.0"
   }
 }
