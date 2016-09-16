@@ -15,16 +15,11 @@ filetype indent on
 " Refresh a file when it is changed from the outside
 set autoread
 
-" Extra key combinations
-let mapleader = ","
-let g:mapleader = ","
-
-" Fast saving
-nmap <leader>w :w!<cr>
-
 " Productivity
 nnoremap ; :
 vnoremap ; :
+
+map <F2> :NERDTreeToggle<CR>
 
 " Show line numbers
 set number

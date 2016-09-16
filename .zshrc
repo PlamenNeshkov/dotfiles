@@ -15,7 +15,7 @@ export SSH_KEY_PATH="~/.ssh/id_rsa.pub"
 
 # aliases
 alias c="cd ~/Code"
-alias rmd="vi ./README.md"
+alias rmd="vim ./README.md"
 alias jstree="tree -I 'node_modules|bower_components'"
 alias jst="jstree"
 alias zconf="vi ~/.zshrc"
