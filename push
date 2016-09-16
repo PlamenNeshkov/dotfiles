@@ -2,7 +2,7 @@
 
 rm .vimrc .zshrc .eshintrc
 cp ~/.vimrc .
-cp ~/.zshrc .    'no-floa
+cp ~/.zshrc .
 cp ~/.eshintrc .
 
 git add -A
