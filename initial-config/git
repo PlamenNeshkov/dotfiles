@@ -1,0 +1,4 @@
+sudo apt install -y git
+git config --global user.name "Plamen Neshkov"
+git config --global user.email "plamen@tuta.io"
+git config --global push-default simple
