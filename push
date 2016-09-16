@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rm .vimrc .zshrc .eshintrc
+rm .vimrc .zshrc .eslintrc
 cp ~/.vimrc .
 cp ~/.zshrc .
 cp ~/.eslintrc .
