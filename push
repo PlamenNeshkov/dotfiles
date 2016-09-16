@@ -1,5 +1,10 @@
 #!/bin/bash
 
+rm .vimrc
+rm .zshrc
+cp ~/.vimrc .
+cp ~/.zshrc .
+
 git add -A
 read -p "Commit message: " msg
 git commit -m "$msg"
