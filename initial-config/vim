@@ -1,0 +1,12 @@
+#!/bin/bash
+
+git clone https://github.com/powerline/fonts
+sh fonts/install.sh
+rm -rf fonts
+
+sudo apt install -y exuberant-ctags vim
+wget -O ~/.vimrc https://raw.githubusercontent.com/PlamenNeshkov/dotfiles/master/.vimrc
+
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall
+git config --global core.editor vim

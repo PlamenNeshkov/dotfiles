@@ -1,0 +1,12 @@
+#!/bin/bash
+
+wget -O opensans.zip https://www.fontsquirrel.com/fonts/download/open-sans
+unzip opensans.zip -d opensans
+cp -r opensans ~/.fonts
+rm -rf opensans
+rm opensans.zip
+
+gsettings set org.gnome.desktop.interface document-font-name "Open Sans Regular 12"
+gsettings set org.gnome.desktop.interface font-name "Open Sans Regular 12"
+gsettings set org.gnome.desktop.interface monospace-font-name "Source Code Pro for Powerline Regular 12"
+gsettings set org.gnome.desktop.wm.preferences titlebar-font "Open Sans Regular 12"
