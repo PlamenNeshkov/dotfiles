@@ -1,0 +1,13 @@
+#!/bin/bash
+
+./upgrade
+./git
+./vim
+./fonts
+./theme
+./jsdev
+./chrome
+./java  
+./utils
+./clean
+./zsh
