@@ -9,11 +9,6 @@ sudo apt update -y
 sudo apt upgrade -y 
 sudo apt dist-upgrade -y
 
-# Git
-sudo apt install -y git
-git config --global user.name "Plamen Neshkov"
-git config --global user.email "plamen@tuta.io"
-
 # Vim
 git clone https://github.com/powerline/fonts
 sh fonts/install.sh
