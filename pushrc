@@ -1,9 +1,10 @@
 #!/bin/bash
 
-rm .vimrc .zshrc .eslintrc
+rm .vimrc .zshrc .eslintrc .tmux.conf
 cp ~/.vimrc .
 cp ~/.zshrc .
 cp ~/.eslintrc .
+cp ~/.tmux.conf .
 
 git add -A
 read -p "Commit message: " msg

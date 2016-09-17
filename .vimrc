@@ -156,3 +156,6 @@ set background=dark
 colorscheme solarized
 
 cnoreabbrev Ut UpdateTags
+
+" Ctrl-P
+let g:ctrlp_custom_ignore = 'node_modules\|.git\|public'

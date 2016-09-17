@@ -2,7 +2,7 @@ export ZSH=/home/plamen/.oh-my-zsh
 
 ZSH_THEME="bira"
 
-plugins=(z sudo git debian thefuck npm jsontools web-search cabal)
+plugins=(z sudo git thefuck npm)
 
 export PATH=~/.cabal/bin/:$PATH
 

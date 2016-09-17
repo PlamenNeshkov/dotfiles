@@ -1,7 +1,8 @@
 #!/bin/bash
 
 git pull origin master
-rm ~/.vimrc ~/.zshrc ~/.eslintrc
+rm ~/.vimrc ~/.zshrc ~/.eslintrc ~/.tmux.conf
 cp .vimrc ~
 cp .zshrc ~
 cp .eslintrc ~
+cp .tmux.conf ~
