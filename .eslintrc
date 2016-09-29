@@ -3,5 +3,8 @@
         "browser": true,
         "node": true
     },
-    "extends": "google"
+    "extends": "google",
+    "globals": {
+      "angular": true
+    }
 }

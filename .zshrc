@@ -20,16 +20,23 @@ alias zrc="vim ~/.zshrc"
 alias vrc="vim ~/.vimrc"
 
 # git
+alias gc="git clone"
 alias gaa="git add -A"
 alias gp="git push origin master"
 alias gl="git pull"
 alias gcm="git commit -m"
 
 # npm
-alias npmi="npm install"
-alias npmg="npm install -g"
-alias npms="npm install --save"
-alias npmsd="npm install --save-dev"
+alias npmi="npm i"
+alias npmg="npm i -g"
+alias npms="npm i -S"
+alias npmd="npm i -D"
+alias npmt="npm test"
+alias nst="npm start"
 
 export NVM_DIR="/home/plamen/.nvm"
-nvm() { . "$NVM_DIR/nvm.sh" ; nvm $@ ; } # Lazy load nvm because slow as fuck
+# Lazy load nvm because slow as fuck
+nvm() { . "$NVM_DIR/nvm.sh" ; nvm $@ ; } 
+
+alias nvms="nvm use stable"
+alias ndmn="nodemon"

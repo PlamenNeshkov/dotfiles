@@ -125,6 +125,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'gavocanov/vim-js-indent'
+Plugin 'JamshedVesuna/vim-markdown-preview'
 
 call vundle#end()
 
@@ -158,4 +159,7 @@ colorscheme solarized
 cnoreabbrev Ut UpdateTags
 
 " Ctrl-P
-let g:ctrlp_custom_ignore = 'node_modules\|.git\|public'
+let g:ctrlp_custom_ignore = 'node_modules\|.git'
+let g:ctrlp_working_path_mode = 0
+
+let vim_markdown_preview_hotkey='<C-m>'

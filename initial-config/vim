@@ -4,7 +4,7 @@ git clone https://github.com/powerline/fonts
 sh fonts/install.sh
 rm -rf fonts
 
-sudo apt install -y exuberant-ctags vim
+sudo apt install -y exuberant-ctags libtext-markdown-perl vim
 wget -O ~/.vimrc https://raw.githubusercontent.com/PlamenNeshkov/dotfiles/master/.vimrc
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
