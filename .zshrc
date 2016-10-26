@@ -8,6 +8,8 @@ source $ZSH/oh-my-zsh.sh
 
 export EDITOR="vim"
 
+alias omgwtf="sudo service network-manager restart"
+
 # ssh
 # export SSH_KEY_PATH="~/.ssh/id_rsa.pub"
 #
